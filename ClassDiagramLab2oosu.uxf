@@ -1,0 +1,90 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>561</x><y>30</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+IPerson
+--
+
+
++namn:String
++personNr:String
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>371</x><y>650</y><w>210</w><h>190</h></coordinates><panel_attributes>classStudent
+--
++StudentId:String
++AntagningsDatum:String
++KursId:String
+
+--
++set StudentId()
++set Antagningsdatum()
++set KursId()
++ListaStudent()
++RegistreraStudent</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1081</x><y>910</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+ILabb
+--
++Namn:String
++LabbId:String
++StartDatum:String
++SlutDatum:String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>731</x><y>650</y><w>210</w><h>190</h></coordinates><panel_attributes>classLarare
+--
++Lararlag:String
++LararId:String
+--
++set Lararlag()
++set LararId()
++ListaLarare()
++RegistreraLarare()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>551</x><y>340</y><w>210</w><h>190</h></coordinates><panel_attributes>/classPerson/
+--
+
+
++namn:String
++personNr:String
+
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1</x><y>930</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+IKurs
+--
++KursId
++KursNamn
++StartDatum
++SlutDatum
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>371</x><y>920</y><w>210</w><h>190</h></coordinates><panel_attributes>classKurs
+--
+
+
+
+--
++set KursId()
++set KursNamn()
++set StartDatum()
++set SlutDatum()
++RegistreraKurs()
++ListaKurs()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>561</x><y>0</y><w>60</w><h>90</h></coordinates><panel_attributes>Interface
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>1091</x><y>880</y><w>60</w><h>90</h></coordinates><panel_attributes>Interface
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>741</x><y>910</y><w>210</w><h>190</h></coordinates><panel_attributes>classLabb
+--
+
+
+
+--
++Set Namn()
++Set LabbId()
++Set StartDatum()
++Set SlutDatum()
++ListaLab()
++RegistreraLab()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>201</x><y>1010</y><w>190</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>941</x><y>980</y><w>160</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>140;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>671</x><y>520</y><w>160</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;140;130</additional_attributes></element><element><id>Relation</id><coordinates><x>491</x><y>520</y><w>170</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>641</x><y>210</y><w>30</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>461</x><y>830</y><w>50</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1= 0..*
+
+m2= 1:1</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>571</x><y>990</y><w>190</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1= 1..2
+m2= 1:1</panel_attributes><additional_attributes>10;10;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>571</x><y>740</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=1..3
+&lt; teaches to</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>UMLInterface</id><coordinates><x>1</x><y>890</y><w>60</w><h>90</h></coordinates><panel_attributes>Interface
+--
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
